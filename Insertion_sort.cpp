@@ -32,7 +32,7 @@ void insertionSort(int arr[], int size, int element, int position)
             arr[j + 1] = arr[j]; // j = 1 ; o th elmnt to 1st position
             j--;                 // i =2 ( j = 2 ) //at last j become -1 and break the loop
         }
-        arr[j + 1] = key;  // aftert breaking the loop at -1 index j + 1 = 0 and element stores at 0th indx
+        arr[j + 1] = key;  // after breaking the loop at -1 index j + 1 = 0 and element stores at 0th indx
     }
 }
 
