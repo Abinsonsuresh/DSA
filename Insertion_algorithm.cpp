@@ -28,7 +28,7 @@ int main()
     cout << "\nEnter the elements: ";
     for (i = 0; i < n; i++)
     {
-        cin >> arr[i];
+         cin >> arr[i];
     }
 
     display(arr, n);
