@@ -6,18 +6,19 @@ void display(int arr[], int n)
 {
     for (int i = 0; i < n; i++)
     {
-        cout << arr[i] << " ";
+        cout<<arr[i]<<" ";
     }
-    cout << "\n";
+    cout<<"\n";
+
 }
 
-void insertion(int arr[], int size, int element, int position)
+void Deletion(int arr[], int size,  int position)
 {
-    for (int i = size - 1; i >= position; i--)
+    for(int i = position; i< size - 1 ; i++)
     {
-        arr[i + 1] = arr[i];
+        arr[i] = arr[i+1];
     }
-    arr[position] = element;
+
 }
 
 int main()
@@ -33,16 +34,14 @@ int main()
 
     display(arr, n);
 
-    cout << "\nEnter the element to insert into the array ";
-    cin >> element;
 
-    cout << "\nEnter the position of the element to insert into the array ";
+    cout << "\nEnter the position of the element to delete from the array ";
     cin >> position;
 
-    insertion(arr, n, element, position);
-    n = n + 1;
-    cout << "\n inserted array is : ";
+    Deletion(arr, n, position);
+    n = n - 1;
     display(arr, n);
+
 
     return 0;
 }
