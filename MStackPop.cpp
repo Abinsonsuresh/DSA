@@ -64,8 +64,8 @@ void pop1(){
 void pop2(){
   if(top2 < n)
   {
-    cout<<" \nRemoved element "<<stack[top1];
-    top2--;
+    cout<<" \nRemoved element "<<stack[top2];
+    top2++;
     //bcz LIFO
   }
   else{
