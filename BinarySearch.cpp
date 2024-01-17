@@ -18,7 +18,7 @@ int BinarySearch(int arr[], int high, int low, int targ)
 
     if(mid < targ)
     {
-      return BinarySearch(arr, mid + 1, low, targ);
+      return BinarySearch(arr, high, mid + 1, targ);
     }
   }
   return -1;
